@@ -6,3 +6,4 @@ Recreating the game, Tic Tac Toe, with the console using Scannner and implementi
 **TODO:**
   - Refractor, reptitive code particularly regarding victory and rematch messages
   - Add ability to choose to be X or 0 when playing against easy and hard bot
+  - Need to add more instructions in game for users to know how to input values
