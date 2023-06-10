@@ -535,18 +535,6 @@ public class TicTacToe{
         return 0;
     }
     
-    //Method to determine if there are moves left -> the opposite of fullBoard method
-    public static boolean isMovesLeft(char[][] board){
-        for(int i = 0; i < board.length; i++){
-            for(int j = 0; j < board[i].length; j++){
-                if(board[i][j] == ' '){
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-    
     //Method to determine the optimal move with minimax
     public static int minimax(char[][] board, int depth, Boolean isMax){
         int score = evaluate(board);
@@ -554,7 +542,7 @@ public class TicTacToe{
             return score;
         }
         
-        if(!isMovesLeft(board)){
+        if(fullBoard(board)){
             return 0;
         }
         
